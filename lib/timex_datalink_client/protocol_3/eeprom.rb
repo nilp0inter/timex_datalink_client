@@ -22,7 +22,7 @@ class TimexDatalinkClient
       APPOINTMENT_NO_NOTIFICATION = 0xff
       APPOINTMENT_NOTIFICATION_VALID_MINUTES = (0..30).step(5)
 
-      attr_accessor :appointments, :anniversaries, :phone_numbers, :lists, :appointment_notification_minutes
+      attr_accessor :app_blobs, :appointments, :anniversaries, :phone_numbers, :lists, :appointment_notification_minutes
 
       validates :appointment_notification_minutes, inclusion: {
         in: APPOINTMENT_NOTIFICATION_VALID_MINUTES,
@@ -33,6 +33,7 @@ class TimexDatalinkClient
 
       # Create an Eeprom instance.
       #
+      # @param app_blobs [Array<WristappBlob>] to be added to the EEPROM data.
       # @param appointments [Array<Appointment>] Appointments to be added to EEPROM data.
       # @param anniversaries [Array<Anniversary>] Anniversaries to be added to EEPROM data.
       # @param phone_numbers [Array<PhoneNumber>] Phone numbers to be added to EEPROM data.
@@ -40,8 +41,9 @@ class TimexDatalinkClient
       # @param appointment_notification_minutes [Integer, nil] Appointment notification in minutes.
       # @return [Eeprom] Eeprom instance.
       def initialize(
-        appointments: [], anniversaries: [], phone_numbers: [], lists: [], appointment_notification_minutes: nil
+        app_blobs: [], appointments: [], anniversaries: [], phone_numbers: [], lists: [], appointment_notification_minutes: nil
       )
+        @app_blobs = app_blobs
         @appointments = appointments
         @anniversaries = anniversaries
         @phone_numbers = phone_numbers
@@ -65,8 +67,8 @@ class TimexDatalinkClient
         [
           CPACKET_SECT,
           payloads.length,
-          items_addresses,
-          items_lengths,
+          items_addresses.drop(2),
+          items_lengths.drop(1),
           earliest_appointment_year,
           appointment_notification_minutes_value
         ].flatten
@@ -77,7 +79,7 @@ class TimexDatalinkClient
       end
 
       def all_items
-        [appointments, lists, phone_numbers, anniversaries]
+        [app_blobs, appointments, lists, phone_numbers, anniversaries]
       end
 
       def all_packets
