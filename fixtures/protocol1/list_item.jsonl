@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol1::Eeprom.new(lists: [TimexDatalinkClient::Protocol1::Eeprom::List.new(list_entry: \"Muffler bearings\", priority: 2)])","class_name":"TimexDatalinkClient::Protocol1::Eeprom","packets":[[5,96,2,192,185],[32,97,1,0,14,0,14,0,29,0,29,0,1,0,0,0,255,15,2,150,247,60,149,179,145,139,163,108,210,5,221,113],[7,97,2,113,63,188,111],[4,98,41,131]]}

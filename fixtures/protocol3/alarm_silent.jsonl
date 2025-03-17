@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol3::Alarm.new(number: 3, audible: false, time: Time.new(0, 1, 1, 9, 10), message: \"Get up\")","class_name":"TimexDatalinkClient::Protocol3::Alarm","packets":[[18,80,3,9,10,0,0,16,14,29,36,30,25,36,36,0,191,169]]}

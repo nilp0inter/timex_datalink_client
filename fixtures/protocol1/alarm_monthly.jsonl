@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol1::Alarm.new(number: 5, audible: false, time: Time.new(0, 1, 1, 14, 0), day: 26, message: \"Monthly\")","class_name":"TimexDatalinkClient::Protocol1::Alarm","packets":[[18,80,5,14,0,0,26,22,24,23,29,17,21,34,36,0,236,47],[7,112,0,102,0,160,132]]}

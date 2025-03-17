@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol6::Alarm.new(number: 1, status: :armed, message: \"State-of-the-art\", time: Time.new(0, 1, 1, 6, 30))","class_name":"TimexDatalinkClient::Protocol6::Alarm","packets":[[26,81,1,6,30,0,0,1,29,30,11,30,15,49,25,16,49,30,18,15,49,11,28,30,122,241]]}

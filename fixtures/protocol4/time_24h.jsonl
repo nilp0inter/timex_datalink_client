@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol4::Time.new(zone: 2, name: \"GMT\", time: Time.new(2022, 9, 5, 11, 39, 44), is_24h: true, date_format: \"%_m-%d-%y\")","class_name":"TimexDatalinkClient::Protocol4::Time","packets":[[17,50,2,44,11,39,9,5,22,16,22,29,0,2,0,118,112]]}

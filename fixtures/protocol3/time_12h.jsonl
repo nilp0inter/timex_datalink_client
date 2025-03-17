@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol3::Time.new(zone: 1, name: \"PDT\", time: Time.new(2022, 9, 5, 3, 39, 44), is_24h: false, date_format: \"%_m-%d-%y\")","class_name":"TimexDatalinkClient::Protocol3::Time","packets":[[17,50,1,44,3,39,9,5,22,25,13,29,0,1,0,190,59]]}

@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol9::Alarm.new(number: 3, audible: true, time: Time.new(0, 1, 1, 8, 30), day: 15, message: \"TO SAY ILL SAY\")","class_name":"TimexDatalinkClient::Protocol9::Alarm","packets":[[26,80,3,8,30,0,15,1,29,24,36,28,10,34,36,18,21,21,36,28,10,34,36,36,5,69]]}

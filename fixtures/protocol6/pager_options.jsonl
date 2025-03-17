@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol6::PagerOptions.new(auto_on_off: true, on_hour: 6, on_minute: 15, off_hour: 22, off_minute: 45, alert_sound: 4)","class_name":"TimexDatalinkClient::Protocol6::PagerOptions","packets":[[10,115,1,6,15,22,45,4,42,181]]}

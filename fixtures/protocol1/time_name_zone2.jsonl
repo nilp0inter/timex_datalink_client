@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol1::TimeName.new(zone: 2, name: \"GMT\")","class_name":"TimexDatalinkClient::Protocol1::TimeName","packets":[[8,49,2,16,22,29,152,178]]}

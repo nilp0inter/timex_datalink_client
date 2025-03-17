@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol3::SoundOptions.new(hourly_chime: true, button_beep: false)","class_name":"TimexDatalinkClient::Protocol3::SoundOptions","packets":[[6,113,1,0,3,81]]}

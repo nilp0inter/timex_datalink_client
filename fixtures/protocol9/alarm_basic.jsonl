@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol9::Alarm.new(number: 1, audible: false, time: Time.new(0, 1, 1, 6, 30), message: \"TALKING AWAY\")","class_name":"TimexDatalinkClient::Protocol9::Alarm","packets":[[26,80,1,6,30,0,0,0,29,10,21,20,18,23,16,36,10,32,10,34,36,36,36,36,75,196]]}

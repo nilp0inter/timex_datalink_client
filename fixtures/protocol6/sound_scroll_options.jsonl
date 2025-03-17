@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol6::SoundScrollOptions.new(hourly_chime: true, button_beep: false, scroll_speed: 2)","class_name":"TimexDatalinkClient::Protocol6::SoundScrollOptions","packets":[[7,113,1,0,2,253,126]]}

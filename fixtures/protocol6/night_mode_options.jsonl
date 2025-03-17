@@ -1,0 +1,1 @@
+{"command":"TimexDatalinkClient::Protocol6::NightModeOptions.new(night_mode_deactivate_hours: 6, indiglo_timeout_seconds: 10, night_mode_on_notification: true)","class_name":"TimexDatalinkClient::Protocol6::NightModeOptions","packets":[[7,114,1,6,10,223,124]]}
